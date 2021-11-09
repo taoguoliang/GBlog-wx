@@ -1,10 +1,10 @@
 import { mergeJsonObject } from './../utils/utils'
-const ApiBaseUrl = 'https://www.geekera.cn' // 生产上
+const ApiBaseUrl = 'https://taoguoliang.cn/' // 生产上
 // const ApiBaseUrl = 'http://127.0.0.1:8090';//本地
 // const ApiBaseUrl = 'https://test.geekera.cn';//测试
 
 const Config = {
-  AccessKey: '', // 接口key，必填
+  AccessKey: '8GXz6j3wxPQ64Pv', // 接口key，必填
   guestbookSheetId: 2, // 留言页sheet的id,
   logo: '', // 选填，填写将提高首页加载速度
   blogTitle: '' // 选填，填写将提高首页加载速度
@@ -14,12 +14,12 @@ const Config = {
  * 文档地址：https://docs.geekera.cn/gblog-wx/
  */
 const CloudConfig = {
-  isOpen: false,
-  env: 'fuzui', // 云环境ID
-  shareOpen: false, // 海报分享开启
+  isOpen: true,
+  env: 'cxy-5geqb23h0ce07a3b', // 云环境ID
+  shareOpen: true, // 海报分享开启
   randomGraphOpen: false, // 随机图开启（内容管理）
   checkMessage: false, // 敏感词检测
-  adminUser: false // 后台免密登陆
+  adminUser: true // 后台免密登陆
 }
 // 文章、日记自定义样式
 const commonTagStyle = {
@@ -67,8 +67,8 @@ const PageSize = {
 
 // 随机默认图，可加减数组
 const RandomImage = [
-  'https://cdn.fuzui.net/blog/bg2_1592326421605.jpg',
-  'https://cdn.fuzui.net/blog/bg1_1592326421605.jpg'
+  'https://taoguoliang.cn:9000/halo/image_1636339804664.png',
+  'https://taoguoliang.cn:9000/halo/image_1636339884500.png'
 ]
 
 // 自定义部分样式
@@ -81,12 +81,12 @@ const CustomStyle = {
 
 // 关于页面中个人信息，置空不显示
 const PersonalInfo = {
-  blog: 'https://www.geekera.cn',
-  qq: '229999223',
-  wx: '15555542203',
-  mail: 'i@geekera.cn',
-  github: 'https://github.com/fuzui',
-  gitee: 'https://gitee.com/fuzui'
+  blog: 'https://taoguoliang.cn',
+  qq: '',
+  wx: '',
+  mail: 'taogl3@163.com',
+  github: 'https://github.com/taoguoliang',
+  gitee: ''
 }
 
 module.exports = {
